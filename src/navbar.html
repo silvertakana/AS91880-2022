@@ -56,6 +56,9 @@
     </ul>
     <p class="menu-text">Menu</p>
   </button>
-  // loading menu.js online for local testing (require internet)
-  <script src="https://raw.githubusercontent.com/silvertakana/AS91880-2022/main/src/menu.js"></script>
+  <script>let btn = $(".main-menu-btn")[0];
+btn.addEventListener("click", function () {
+  //this.classList.remove('shadow1');
+  $(".background-bar-right")[0].classList.toggle("menu-open");
+});</script>
 </div>
